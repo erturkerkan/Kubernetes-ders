@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: merhaba-dunya-deploy
+  name: merhaba-dunya-deploy-nodsuz
   labels:
     name: merhaba-dunya
 spec:
@@ -17,5 +17,3 @@ spec:
       containers:
       - image: techakademi/merhabadunya:1
         name: merhaba-dunya
-      nodeSelector:
-        gpu: "true"
